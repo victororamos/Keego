@@ -1,0 +1,24 @@
+{
+  "name": "keegobdd",
+  "version": "1.0.0",
+  "description": "Keego com Cucumber",
+  "main": "e2e.js",
+  "scripts": {
+    "test": "cypress open"
+  },
+  "author": "JVOR",
+  "license": "ISC",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^13.0.3",
+    "@cypress/webpack-preprocessor": "^5.15.0",
+    "@cypress/xpath": "^2.0.3",
+    "cypress-fill-command": "^1.0.2"
+  },
+  "dependencies": {
+    "cypress-real-events": "^1.7.2"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "commonPath": "cypress/integration/common"
+  }
+}
